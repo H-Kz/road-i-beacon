@@ -1,5 +1,5 @@
 ﻿var byteUUID
-var  binaryArray = []
+var binaryArray = ["0", "1", "1", "0", "0", "0", "0", "0", "0", "1", "0", "1"]
 for (i = 12; i < 128; i++) {
     binaryArray[i] = "0"
 }
