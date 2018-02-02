@@ -1,0 +1,66 @@
+﻿<html>
+<head>
+    <meta charset="utf-8">
+    <title>自己紹介</title>
+    
+<!--
+
+//-->
+</head>
+<body>
+    <input type="button" onclick="send()" value="実行">
+    右左折等専用レーン<br>
+    ４ケタ数字で、指定なし＝０<br>
+    ↑＝１　↗＝２　→＝３...↖＝７<br>
+    ex; 直進と右だけ可能なら1300<br>
+    <input type="text" id="in1_direction" size="1"><input type="text" id="in2_direction"size="1"><input type="text" id="in3_direction"size="1"><input type="text" id="in4_direction"size="1"><br><hr>
+
+    緯度<br>
+    北緯なら正の数字、南緯ならーをつける<br>
+    <input type="text" id="in1_latitude">.<input type="text" id="in2_latitude"><br>
+    <br>
+    経度<br>
+    東経なら正の数字、西経ならーをつける<br>
+    小数点以下第４位まで<br>
+    <input type="text" id="in1_longitude">.<input type="text" id="in2_longitude"><br><hr>
+    高さ<br>
+    地上は０〜７、地下はー０〜ー７<br>
+    <input type="text" id="in_high"><br><hr>
+    車線数<br>
+    ８までの数字、片側で<br>
+    <input type="text" id="in_total_lane"><br><hr>
+    車線の位置<br>
+    左から何番目の車線か<br>
+    <input type="text" id="in_lane"><br><hr>
+    進行方向<br>
+    １６方位で、北＝０、北北東＝１、北東＝２...北北西＝１５<br>
+    <input type="text" id="in_news"><br><hr>
+    交差点までの距離<br>
+    ８段階で８段階で８が最長、停止線位置＝０<br>
+    <input type="text" id="in_inter"><br><hr>
+    道路の種類<br>
+    高速＝３　国道＝２　都道府県道＝１　市町村道＝０<br>
+    <input type="text" id="in_roadType"><br><hr>
+    高速道路の種類<br>
+    環状線(C)＝０　その他(E)＝１<br>
+    <input type="text" id="in_highwayType"><br><hr>
+    道路番号<br>
+    「国道◯◯線」の番号、ナンバリングがなければ0<br>
+    <input type="text" id="in_rootNumber"><br><hr>
+    最高速度<br>
+    160まで5km刻みで<br>
+    <input type="text" id="in_maxSpeed"><br><hr>
+    最低速度<br>
+    160まで、5km刻みで<br>
+    <input type="text" id="in_minSpeed"><br><hr>
+    速度の単位
+    メートル法(km/h)→１　マイル(mi/h)→０
+    <input type="text" id="in_unit"><br><hr>
+
+
+    <br><br><br>
+
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html >
