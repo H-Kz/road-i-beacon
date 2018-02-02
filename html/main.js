@@ -1,4 +1,5 @@
 ﻿var byteUUID
+var  binaryArray = []
 for (i = 12; i < 128; i++) {
     binaryArray[i] = "0"
 }
