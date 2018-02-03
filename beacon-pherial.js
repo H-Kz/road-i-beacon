@@ -13,8 +13,10 @@ Bleacon.startScanning();
 
 
 Bleacon.on('discover', function (bleacon) {
-    console.log("[DISCOVER] UUID:" + bleacon.uuid)
-    console.log("[DISCOVER] distance:" + bleacon.proximity)
+    var uuid = bleacon.uuid;
+    var proximity = bleacon.proximity;
+    console.log("[DISCOVER] UUID:" + uuid)
+    console.log("[DISCOVER] distance:" + proximity)
 
 
     //識別子確認
