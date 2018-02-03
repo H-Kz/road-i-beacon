@@ -24,7 +24,7 @@ function makeUUID() {
     console.log(byteUUID)
     UUID = UUID + parseInt(byteUUID, 2).toString(16)
     }
-console.log(UUID)
+    return UUID
 }
 function send() {
     binaryUUID(14, Math.abs(document.getElementById('in1_direction').value))
@@ -56,5 +56,11 @@ function send() {
     binaryArray[117] = document.getElementById('in_unit').value
     binaryUUID(124, Math.abs(document.getElementById('in_minSpeed').value)/5)
     binaryArray[125] = document.getElementById('in_unit').value
-    makeUUID()
+
+    var uuid = makeUUID()
+    fetch(location.href + "/start?uuid=" + uuid).then(()=>{
+        alert("成功しました")
+    }).catch(()=>{
+        alert("失敗しました")
+    })
 }
