@@ -58,7 +58,7 @@ function send() {
     binaryArray[125] = document.getElementById('in_unit').value
 
     var uuid = makeUUID()
-    fetch(location.href + "/start?uuid=" + uuid).then(()=>{
+    fetch(location.href + "start?uuid=" + uuid).then(()=>{
         alert("成功しました")
     }).catch(()=>{
         alert("失敗しました")
